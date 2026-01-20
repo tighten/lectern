@@ -13,6 +13,7 @@ return new class extends Migration
             $table->foreignId('parent_id')->nullable()->constrained('lectern_categories')->nullOnDelete();
             $table->string('name');
             $table->string('slug')->unique();
+            $table->string('emoji')->nullable();
             $table->text('description')->nullable();
             $table->integer('order')->default(0);
             $table->boolean('is_private')->default(false);
