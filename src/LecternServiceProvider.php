@@ -44,11 +44,13 @@ class LecternServiceProvider extends ServiceProvider
 
     protected function registerPublishing(): void
     {
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
         $this->publishes([
             __DIR__ . '/../config/lectern.php' => config_path('lectern.php'),
         ], 'lectern-config');
 
-        $this->publishesMigrations([
+        $this->publishes([
             __DIR__ . '/../database/migrations' => database_path('migrations'),
         ], 'lectern-migrations');
     }
