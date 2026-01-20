@@ -1,5 +1,5 @@
 {
-    "name": "tightenco/lectern",
+    "name": "tighten/lectern",
     "description": "A headless forum package for Laravel",
     "keywords": ["laravel", "forum", "api", "headless"],
     "license": "MIT",
