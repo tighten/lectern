@@ -8,6 +8,7 @@ use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
 use Tightenco\Lectern\Http\Requests\StorePostRequest;
 use Tightenco\Lectern\Http\Requests\UpdatePostRequest;
+use Tightenco\Lectern\Http\Requests\UploadPostImageRequest;
 use Tightenco\Lectern\Http\Resources\PostResource;
 use Tightenco\Lectern\Models\Post;
 use Tightenco\Lectern\Models\Thread;
@@ -94,5 +95,46 @@ class PostController extends Controller
             ->paginate(config('lectern.pagination.posts'));
 
         return PostResource::collection($replies);
+    }
+
+    public function uploadImage(UploadPostImageRequest $request, Post $post): JsonResponse
+    {
+        if (! config('lectern.images.enabled', true)) {
+            return response()->json(['message' => 'Image uploads are disabled.'], 403);
+        }
+
+        $maxPerPost = config('lectern.images.max_per_post', 10);
+        if ($post->getMedia('images')->count() >= $maxPerPost) {
+            return response()->json(['message' => "Maximum of {$maxPerPost} images per post allowed."], 422);
+        }
+
+        $media = $post->addMediaFromRequest('image')
+            ->toMediaCollection('images');
+
+        $conversions = [];
+        foreach (array_keys(config('lectern.images.conversions', [])) as $conversion) {
+            $conversions[$conversion] = $media->getUrl($conversion);
+        }
+
+        return response()->json([
+            'id' => $media->id,
+            'url' => $media->getUrl(),
+            'conversions' => $conversions,
+        ]);
+    }
+
+    public function deleteImage(Post $post, int $mediaId): JsonResponse
+    {
+        $this->authorize('update', $post);
+
+        $media = $post->getMedia('images')->firstWhere('id', $mediaId);
+
+        if (! $media) {
+            return response()->json(['message' => 'Image not found.'], 404);
+        }
+
+        $media->delete();
+
+        return response()->json(null, 204);
     }
 }

@@ -36,5 +36,17 @@ return [
         'posts' => 15,
     ],
 
+    'images' => [
+        'enabled' => true,
+        'max_size' => 2048,
+        'allowed_types' => ['image/jpeg', 'image/png', 'image/gif', 'image/webp'],
+        'max_per_post' => 10,
+        'disk' => 'public',
+        'conversions' => [
+            'thumb' => [200, 200],
+            'preview' => [800, 800],
+        ],
+    ],
+
     'response_format' => 'json',
 ];

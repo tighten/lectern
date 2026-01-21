@@ -30,6 +30,17 @@ class PostResource extends JsonResource
             ),
             'user' => new UserResource($this->whenLoaded('user')),
             'replies' => PostResource::collection($this->whenLoaded('replies')),
+            'images' => $this->when(
+                config('lectern.images.enabled', true),
+                fn () => $this->getMedia('images')->map(fn ($media) => [
+                    'id' => $media->id,
+                    'url' => $media->getUrl(),
+                    'conversions' => collect(config('lectern.images.conversions', []))
+                        ->keys()
+                        ->mapWithKeys(fn ($conversion) => [$conversion => $media->getUrl($conversion)])
+                        ->all(),
+                ])
+            ),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

@@ -38,6 +38,8 @@ Route::prefix(config('lectern.prefix'))
             Route::post('threads/{thread}/posts', [PostController::class, 'store'])->name('threads.posts.store');
             Route::put('posts/{post}', [PostController::class, 'update'])->name('posts.update');
             Route::delete('posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
+            Route::post('posts/{post}/images', [PostController::class, 'uploadImage'])->name('posts.images.store');
+            Route::delete('posts/{post}/images/{media}', [PostController::class, 'deleteImage'])->name('posts.images.destroy');
 
             Route::post('posts/{post}/reactions', [ReactionController::class, 'store'])->name('posts.reactions.store');
             Route::delete('posts/{post}/reactions/{type}', [ReactionController::class, 'destroy'])->name('posts.reactions.destroy');

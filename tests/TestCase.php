@@ -5,6 +5,7 @@ namespace Tightenco\Lectern\Tests;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Spatie\MediaLibrary\MediaLibraryServiceProvider;
 use Tightenco\Lectern\LecternServiceProvider;
 
 abstract class TestCase extends Orchestra
@@ -24,6 +25,7 @@ abstract class TestCase extends Orchestra
     {
         return [
             LecternServiceProvider::class,
+            MediaLibraryServiceProvider::class,
         ];
     }
 
@@ -38,6 +40,13 @@ abstract class TestCase extends Orchestra
 
         $app['config']->set('lectern.user.model', User::class);
         $app['config']->set('lectern.auth_middleware', 'auth');
+
+        $app['config']->set('filesystems.disks.public', [
+            'driver' => 'local',
+            'root' => storage_path('app/public'),
+            'url' => '/storage',
+            'visibility' => 'public',
+        ]);
     }
 
     protected function defineDatabaseMigrations(): void
