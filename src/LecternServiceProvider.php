@@ -49,10 +49,6 @@ class LecternServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/lectern.php' => config_path('lectern.php'),
         ], 'lectern-config');
-
-        $this->publishes([
-            __DIR__ . '/../database/migrations' => database_path('migrations'),
-        ], 'lectern-migrations');
     }
 
     protected function registerRoutes(): void
