@@ -42,6 +42,7 @@ return [
         'allowed_types' => ['image/jpeg', 'image/png', 'image/gif', 'image/webp'],
         'max_per_post' => 10,
         'disk' => 'public',
+        'queue_conversions' => false,
         'conversions' => [
             'thumb' => [200, 200],
             'preview' => [800, 800],

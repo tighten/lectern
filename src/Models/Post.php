@@ -89,12 +89,16 @@ class Post extends Model implements HasMedia
         }
 
         $conversions = config('lectern.images.conversions', []);
+        $queueConversions = config('lectern.images.queue_conversions', false);
 
         foreach ($conversions as $name => $dimensions) {
-            $this->addMediaConversion($name)
+            $conversion = $this->addMediaConversion($name)
                 ->fit(Fit::Contain, $dimensions[0], $dimensions[1])
-                ->nonQueued()
                 ->performOnCollections('images');
+
+            if (! $queueConversions) {
+                $conversion->nonQueued();
+            }
         }
     }
 }
