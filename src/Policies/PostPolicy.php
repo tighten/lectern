@@ -1,10 +1,10 @@
 <?php
 
-namespace Tightenco\Lectern\Policies;
+namespace Tighten\Lectern\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Thread;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Thread;
 
 class PostPolicy
 {

@@ -1,23 +1,23 @@
 <?php
 
-namespace Tightenco\Lectern;
+namespace Tighten\Lectern;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
-use Tightenco\Lectern\Console\Commands\InstallCommand;
-use Tightenco\Lectern\Http\Middleware\LecternBanCheck;
-use Tightenco\Lectern\Models\Ban;
-use Tightenco\Lectern\Models\Category;
-use Tightenco\Lectern\Models\Mention;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Reaction;
-use Tightenco\Lectern\Models\Subscription;
-use Tightenco\Lectern\Models\Thread;
-use Tightenco\Lectern\Policies\CategoryPolicy;
-use Tightenco\Lectern\Policies\PostPolicy;
-use Tightenco\Lectern\Policies\ThreadPolicy;
+use Tighten\Lectern\Console\Commands\InstallCommand;
+use Tighten\Lectern\Http\Middleware\LecternBanCheck;
+use Tighten\Lectern\Models\Ban;
+use Tighten\Lectern\Models\Category;
+use Tighten\Lectern\Models\Mention;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Reaction;
+use Tighten\Lectern\Models\Subscription;
+use Tighten\Lectern\Models\Thread;
+use Tighten\Lectern\Policies\CategoryPolicy;
+use Tighten\Lectern\Policies\PostPolicy;
+use Tighten\Lectern\Policies\ThreadPolicy;
 
 class LecternServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Models;
+namespace Tighten\Lectern\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

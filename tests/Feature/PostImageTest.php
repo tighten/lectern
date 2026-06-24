@@ -2,8 +2,8 @@
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Tests\User;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Tests\User;
 
 beforeEach(function () {
     Storage::fake('public');

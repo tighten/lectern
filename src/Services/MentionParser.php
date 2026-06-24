@@ -1,11 +1,11 @@
 <?php
 
-namespace Tightenco\Lectern\Services;
+namespace Tighten\Lectern\Services;
 
 use Illuminate\Support\Collection;
-use Tightenco\Lectern\Events\UserMentioned;
-use Tightenco\Lectern\Models\Mention;
-use Tightenco\Lectern\Models\Post;
+use Tighten\Lectern\Events\UserMentioned;
+use Tighten\Lectern\Models\Mention;
+use Tighten\Lectern\Models\Post;
 
 class MentionParser
 {

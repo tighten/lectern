@@ -1,9 +1,9 @@
 <?php
 
-use Tightenco\Lectern\Models\Category;
-use Tightenco\Lectern\Models\Subscription;
-use Tightenco\Lectern\Models\Thread;
-use Tightenco\Lectern\Tests\User;
+use Tighten\Lectern\Models\Category;
+use Tighten\Lectern\Models\Subscription;
+use Tighten\Lectern\Models\Thread;
+use Tighten\Lectern\Tests\User;
 
 it('can subscribe to a thread', function () {
     $user = User::factory()->create();

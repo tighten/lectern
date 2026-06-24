@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Models;
+namespace Tighten\Lectern\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Requests;
+namespace Tighten\Lectern\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\File;
-use Tightenco\Lectern\Models\Post;
+use Tighten\Lectern\Models\Post;
 
 class UploadPostImageRequest extends FormRequest
 {

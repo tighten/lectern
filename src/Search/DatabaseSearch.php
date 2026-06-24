@@ -1,11 +1,11 @@
 <?php
 
-namespace Tightenco\Lectern\Search;
+namespace Tighten\Lectern\Search;
 
 use Illuminate\Pagination\LengthAwarePaginator;
-use Tightenco\Lectern\Contracts\SearchDriver;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Thread;
+use Tighten\Lectern\Contracts\SearchDriver;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Thread;
 
 class DatabaseSearch implements SearchDriver
 {

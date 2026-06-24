@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Carbon;
-use Tightenco\Lectern\Models\Ban;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Thread;
-use Tightenco\Lectern\Tests\User;
+use Tighten\Lectern\Models\Ban;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Thread;
+use Tighten\Lectern\Tests\User;
 
 it('can get user threads', function () {
     $user = User::factory()->create();

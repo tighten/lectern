@@ -1,11 +1,11 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Middleware;
+namespace Tighten\Lectern\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Tightenco\Lectern\Traits\HasLectern;
+use Tighten\Lectern\Traits\HasLectern;
 
 class LecternBanCheck
 {

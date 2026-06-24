@@ -1,6 +1,6 @@
 <?php
 
-use Tightenco\Lectern\Models\Category;
+use Tighten\Lectern\Models\Category;
 
 it('can list categories', function () {
     Category::factory()->count(3)->create();

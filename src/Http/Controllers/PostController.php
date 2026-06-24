@@ -1,18 +1,18 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Controllers;
+namespace Tighten\Lectern\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
-use Tightenco\Lectern\Http\Requests\StorePostRequest;
-use Tightenco\Lectern\Http\Requests\UpdatePostRequest;
-use Tightenco\Lectern\Http\Requests\UploadPostImageRequest;
-use Tightenco\Lectern\Http\Resources\PostResource;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Thread;
-use Tightenco\Lectern\Services\MentionParser;
+use Tighten\Lectern\Http\Requests\StorePostRequest;
+use Tighten\Lectern\Http\Requests\UpdatePostRequest;
+use Tighten\Lectern\Http\Requests\UploadPostImageRequest;
+use Tighten\Lectern\Http\Resources\PostResource;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Thread;
+use Tighten\Lectern\Services\MentionParser;
 
 class PostController extends Controller
 {

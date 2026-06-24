@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Console\Commands;
+namespace Tighten\Lectern\Console\Commands;
 
 use Illuminate\Console\Command;
 
@@ -23,7 +23,7 @@ class InstallCommand extends Command
         $this->newLine();
         $this->line('Add the HasLectern trait to your User model:');
         $this->newLine();
-        $this->line('  use Tightenco\Lectern\Traits\HasLectern;');
+        $this->line('  use Tighten\Lectern\Traits\HasLectern;');
         $this->newLine();
         $this->line('  class User extends Authenticatable');
         $this->line('  {');

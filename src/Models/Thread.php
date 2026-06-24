@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Models;
+namespace Tighten\Lectern\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -9,12 +9,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Tightenco\Lectern\Database\Factories\ThreadFactory;
-use Tightenco\Lectern\Events\ThreadCreated;
-use Tightenco\Lectern\Events\ThreadDeleted;
-use Tightenco\Lectern\Events\ThreadLocked;
-use Tightenco\Lectern\Events\ThreadUnlocked;
-use Tightenco\Lectern\Events\ThreadUpdated;
+use Tighten\Lectern\Database\Factories\ThreadFactory;
+use Tighten\Lectern\Events\ThreadCreated;
+use Tighten\Lectern\Events\ThreadDeleted;
+use Tighten\Lectern\Events\ThreadLocked;
+use Tighten\Lectern\Events\ThreadUnlocked;
+use Tighten\Lectern\Events\ThreadUpdated;
 
 class Thread extends Model
 {

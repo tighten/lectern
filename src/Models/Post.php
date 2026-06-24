@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Models;
+namespace Tighten\Lectern\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -11,10 +11,10 @@ use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Tightenco\Lectern\Database\Factories\PostFactory;
-use Tightenco\Lectern\Events\PostCreated;
-use Tightenco\Lectern\Events\PostDeleted;
-use Tightenco\Lectern\Events\PostUpdated;
+use Tighten\Lectern\Database\Factories\PostFactory;
+use Tighten\Lectern\Events\PostCreated;
+use Tighten\Lectern\Events\PostDeleted;
+use Tighten\Lectern\Events\PostUpdated;
 
 class Post extends Model implements HasMedia
 {

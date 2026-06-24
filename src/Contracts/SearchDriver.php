@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Contracts;
+namespace Tighten\Lectern\Contracts;
 
 use Illuminate\Pagination\LengthAwarePaginator;
 

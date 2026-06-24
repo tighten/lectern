@@ -1,9 +1,9 @@
 <?php
 
-namespace Tightenco\Lectern\Policies;
+namespace Tighten\Lectern\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use Tightenco\Lectern\Models\Category;
+use Tighten\Lectern\Models\Category;
 
 class CategoryPolicy
 {

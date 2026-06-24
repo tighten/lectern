@@ -1,10 +1,10 @@
 <?php
 
-namespace Tightenco\Lectern\Database\Factories;
+namespace Tighten\Lectern\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Thread;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Thread;
 
 class PostFactory extends Factory
 {

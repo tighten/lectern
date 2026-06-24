@@ -1,10 +1,10 @@
 <?php
 
-namespace Tightenco\Lectern\Database\Factories;
+namespace Tighten\Lectern\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use Tightenco\Lectern\Models\Category;
+use Tighten\Lectern\Models\Category;
 
 class CategoryFactory extends Factory
 {

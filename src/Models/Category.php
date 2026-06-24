@@ -1,13 +1,13 @@
 <?php
 
-namespace Tightenco\Lectern\Models;
+namespace Tighten\Lectern\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Tightenco\Lectern\Database\Factories\CategoryFactory;
+use Tighten\Lectern\Database\Factories\CategoryFactory;
 
 class Category extends Model
 {

@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Tightenco\Lectern\Events\UserMentioned;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Thread;
-use Tightenco\Lectern\Services\MentionParser;
-use Tightenco\Lectern\Tests\User;
+use Tighten\Lectern\Events\UserMentioned;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Thread;
+use Tighten\Lectern\Services\MentionParser;
+use Tighten\Lectern\Tests\User;
 
 beforeEach(function () {
     $this->parser = new MentionParser;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Tightenco\Lectern\Tests;
+namespace Tighten\Lectern\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\MediaLibrary\MediaLibraryServiceProvider;
-use Tightenco\Lectern\LecternServiceProvider;
+use Tighten\Lectern\LecternServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
@@ -17,7 +17,7 @@ abstract class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Tightenco\\Lectern\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Tighten\\Lectern\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

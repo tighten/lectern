@@ -1,10 +1,10 @@
 <?php
 
-namespace Tightenco\Lectern\Tests;
+namespace Tighten\Lectern\Tests;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Tightenco\Lectern\Traits\HasLectern;
+use Tighten\Lectern\Traits\HasLectern;
 
 class User extends Authenticatable
 {

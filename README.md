@@ -82,7 +82,7 @@ Add the `HasLectern` trait to your User model:
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Tightenco\Lectern\Traits\HasLectern;
+use Tighten\Lectern\Traits\HasLectern;
 
 class User extends Authenticatable
 {

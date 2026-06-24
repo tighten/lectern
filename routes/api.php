@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Tightenco\Lectern\Http\Controllers\CategoryController;
-use Tightenco\Lectern\Http\Controllers\PostController;
-use Tightenco\Lectern\Http\Controllers\ReactionController;
-use Tightenco\Lectern\Http\Controllers\SearchController;
-use Tightenco\Lectern\Http\Controllers\SubscriptionController;
-use Tightenco\Lectern\Http\Controllers\ThreadController;
+use Tighten\Lectern\Http\Controllers\CategoryController;
+use Tighten\Lectern\Http\Controllers\PostController;
+use Tighten\Lectern\Http\Controllers\ReactionController;
+use Tighten\Lectern\Http\Controllers\SearchController;
+use Tighten\Lectern\Http\Controllers\SubscriptionController;
+use Tighten\Lectern\Http\Controllers\ThreadController;
 
 Route::prefix(config('lectern.prefix'))
     ->middleware(config('lectern.middleware'))

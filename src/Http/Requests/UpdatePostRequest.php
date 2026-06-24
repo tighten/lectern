@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Requests;
+namespace Tighten\Lectern\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

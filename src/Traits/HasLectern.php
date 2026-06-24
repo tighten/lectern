@@ -1,16 +1,16 @@
 <?php
 
-namespace Tightenco\Lectern\Traits;
+namespace Tighten\Lectern\Traits;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
-use Tightenco\Lectern\Models\Ban;
-use Tightenco\Lectern\Models\Mention;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Reaction;
-use Tightenco\Lectern\Models\Subscription;
-use Tightenco\Lectern\Models\Thread;
+use Tighten\Lectern\Models\Ban;
+use Tighten\Lectern\Models\Mention;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Reaction;
+use Tighten\Lectern\Models\Subscription;
+use Tighten\Lectern\Models\Thread;
 
 trait HasLectern
 {

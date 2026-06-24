@@ -1,13 +1,13 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Controllers;
+namespace Tighten\Lectern\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Tightenco\Lectern\Http\Requests\StoreReactionRequest;
-use Tightenco\Lectern\Http\Resources\ReactionResource;
-use Tightenco\Lectern\Models\Post;
+use Tighten\Lectern\Http\Requests\StoreReactionRequest;
+use Tighten\Lectern\Http\Resources\ReactionResource;
+use Tighten\Lectern\Models\Post;
 
 class ReactionController extends Controller
 {

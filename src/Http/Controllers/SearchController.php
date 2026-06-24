@@ -1,12 +1,12 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Controllers;
+namespace Tighten\Lectern\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
-use Tightenco\Lectern\Http\Resources\ThreadResource;
-use Tightenco\Lectern\Services\SearchService;
+use Tighten\Lectern\Http\Resources\ThreadResource;
+use Tighten\Lectern\Services\SearchService;
 
 class SearchController extends Controller
 {

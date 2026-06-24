@@ -1,10 +1,10 @@
 <?php
 
-namespace Tightenco\Lectern\Events;
+namespace Tighten\Lectern\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Tightenco\Lectern\Models\Post;
+use Tighten\Lectern\Models\Post;
 
 class PostUpdated
 {

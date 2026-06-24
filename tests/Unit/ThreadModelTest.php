@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Tightenco\Lectern\Events\ThreadLocked;
-use Tightenco\Lectern\Events\ThreadUnlocked;
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Thread;
-use Tightenco\Lectern\Tests\User;
+use Tighten\Lectern\Events\ThreadLocked;
+use Tighten\Lectern\Events\ThreadUnlocked;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Thread;
+use Tighten\Lectern\Tests\User;
 
 it('can lock a thread', function () {
     Event::fake();

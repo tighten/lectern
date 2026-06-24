@@ -1,15 +1,15 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Controllers;
+namespace Tighten\Lectern\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
-use Tightenco\Lectern\Http\Resources\SubscriptionResource;
-use Tightenco\Lectern\Models\Category;
-use Tightenco\Lectern\Models\Subscription;
-use Tightenco\Lectern\Models\Thread;
+use Tighten\Lectern\Http\Resources\SubscriptionResource;
+use Tighten\Lectern\Models\Category;
+use Tighten\Lectern\Models\Subscription;
+use Tighten\Lectern\Models\Thread;
 
 class SubscriptionController extends Controller
 {

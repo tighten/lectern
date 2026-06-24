@@ -1,8 +1,8 @@
 <?php
 
-use Tightenco\Lectern\Models\Post;
-use Tightenco\Lectern\Models\Reaction;
-use Tightenco\Lectern\Tests\User;
+use Tighten\Lectern\Models\Post;
+use Tighten\Lectern\Models\Reaction;
+use Tighten\Lectern\Tests\User;
 
 it('can add a reaction to a post', function () {
     $user = User::factory()->create();

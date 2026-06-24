@@ -1,11 +1,11 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Controllers;
+namespace Tighten\Lectern\Http\Controllers;
 
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
-use Tightenco\Lectern\Http\Resources\CategoryResource;
-use Tightenco\Lectern\Models\Category;
+use Tighten\Lectern\Http\Resources\CategoryResource;
+use Tighten\Lectern\Models\Category;
 
 class CategoryController extends Controller
 {

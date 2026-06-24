@@ -1,6 +1,6 @@
 <?php
 
-namespace Tightenco\Lectern\Tests;
+namespace Tighten\Lectern\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

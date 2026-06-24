@@ -1,12 +1,12 @@
 <?php
 
-namespace Tightenco\Lectern\Services;
+namespace Tighten\Lectern\Services;
 
 use Illuminate\Pagination\LengthAwarePaginator;
 use InvalidArgumentException;
-use Tightenco\Lectern\Contracts\SearchDriver;
-use Tightenco\Lectern\Search\DatabaseSearch;
-use Tightenco\Lectern\Search\ScoutSearch;
+use Tighten\Lectern\Contracts\SearchDriver;
+use Tighten\Lectern\Search\DatabaseSearch;
+use Tighten\Lectern\Search\ScoutSearch;
 
 class SearchService
 {

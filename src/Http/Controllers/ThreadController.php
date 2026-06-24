@@ -1,18 +1,18 @@
 <?php
 
-namespace Tightenco\Lectern\Http\Controllers;
+namespace Tighten\Lectern\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use Tightenco\Lectern\Http\Requests\StoreThreadRequest;
-use Tightenco\Lectern\Http\Requests\UpdateThreadRequest;
-use Tightenco\Lectern\Http\Resources\ThreadResource;
-use Tightenco\Lectern\Models\Category;
-use Tightenco\Lectern\Models\Thread;
-use Tightenco\Lectern\Services\MentionParser;
+use Tighten\Lectern\Http\Requests\StoreThreadRequest;
+use Tighten\Lectern\Http\Requests\UpdateThreadRequest;
+use Tighten\Lectern\Http\Resources\ThreadResource;
+use Tighten\Lectern\Models\Category;
+use Tighten\Lectern\Models\Thread;
+use Tighten\Lectern\Services\MentionParser;
 
 class ThreadController extends Controller
 {
